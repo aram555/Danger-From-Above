@@ -54,6 +54,10 @@ public class GameUI : MonoBehaviour
         scoreText.text = score.ToString();
         highScoreText.text = highScore.ToString();
         playerHPText.text = playerHP.ToString();
+
+        if(Input.GetKey(KeyCode.Space)) {
+            PlayerPrefs.DeleteAll();
+        }
     }
 
     public void Color(int index) {
@@ -115,6 +119,8 @@ public class GameUI : MonoBehaviour
     public void RewardAD() {
         Player player = GameObject.FindObjectOfType<Player>();
         player.HP = 1;
+
+        Reward.Instance._showAdButton.interactable = false;
 
         defeat.SetActive(false);
         Time.timeScale = 1;

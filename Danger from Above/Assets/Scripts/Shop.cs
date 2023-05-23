@@ -13,7 +13,7 @@ public class Shop : MonoBehaviour
     {
         GetBuySkins();
 
-        GetMoney();
+        moneys = GameUI.game.PlayerHasKey("Moneys", moneys);
     }
 
     // Update is called once per frame
@@ -28,12 +28,8 @@ public class Shop : MonoBehaviour
         }
     }
 
-    private void GetMoney() {
-        moneys = PlayerPrefs.GetInt("Moneys");
-    }
-
     public void Buy(string indexPrice) {
-        GetMoney();
+        moneys = GameUI.game.PlayerHasKey("Moneys", moneys);
 
         string[] split = indexPrice.Split(","[0]);
         int ID = int.Parse(split[0]);
@@ -46,6 +42,7 @@ public class Shop : MonoBehaviour
 
             PlayerPrefs.SetInt("Moneys", moneys);
             GameUI.game.Color(ID);
+            GameUI.game.moneys = GameUI.game.PlayerHasKey("Moneys", moneys);
             print("Buy");
         }
         else if(moneys < price && !PlayerPrefs.HasKey(skins.ToArray()[ID].name)) print("No Buy, No Use");

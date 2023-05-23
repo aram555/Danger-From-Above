@@ -1186,7 +1186,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: -324}
-  m_SizeDelta: {x: 193.723, y: 193.723}
+  m_SizeDelta: {x: 122.409, y: 122.409}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &630423109
 MonoBehaviour:
@@ -2581,7 +2581,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0.0000044396875, y: 0.00014655}
-  m_SizeDelta: {x: 1208.5, y: 1208.5}
+  m_SizeDelta: {x: 733.74, y: 733.74}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &956263044
 MonoBehaviour:
@@ -2605,7 +2605,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 250
+    m_FontSize: 200
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -3732,7 +3732,8 @@ MonoBehaviour:
   - {fileID: 2800000, guid: b97535332e4a2784a9355ad06a7bbc50, type: 3}
   - {fileID: 2800000, guid: cd77e34b93e077a48bb9cf16812e0869, type: 3}
   - {fileID: 2800000, guid: 89de40a8b7d468741a0b9ac856185eae, type: 3}
-  buyedSkins: []
+  buyedSkins:
+  - {fileID: 2800000, guid: 35b180a970857bf4d88c0dffbd4130dd, type: 3}
   moneys: 0
 --- !u!1 &1363273044
 GameObject:
